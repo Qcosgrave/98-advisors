@@ -1,0 +1,46 @@
+name: Publish Daily Blog Post
+
+on:
+  schedule:
+    # Runs every day at 8:00 AM ET (13:00 UTC)
+    - cron: "0 13 * * *"
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for drafts
+        id: check
+        run: |
+          DRAFT_COUNT=$(ls src/content/blog/drafts/*.ts 2>/dev/null | wc -l || echo 0)
+          echo "draft_count=$DRAFT_COUNT" >> "$GITHUB_OUTPUT"
+          if [ "$DRAFT_COUNT" -eq 0 ]; then
+            echo "No drafts to publish. Skipping."
+          else
+            echo "Found $DRAFT_COUNT draft(s) in queue."
+          fi
+
+      - name: Publish next post
+        if: steps.check.outputs.draft_count != '0'
+        run: |
+          chmod +x scripts/publish-next-post.sh
+          bash scripts/publish-next-post.sh
+
+      - name: Commit and push
+        if: steps.check.outputs.draft_count != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          TITLE=$(git diff --cached --name-only | grep "src/content/blog/" | grep -v drafts | head -1 | xargs basename | sed 's/\.ts$//' | tr '-' ' ')
+          git commit -m "Publish blog post: $TITLE"
+          git push
