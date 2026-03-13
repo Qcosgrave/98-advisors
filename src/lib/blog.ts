@@ -1,0 +1,45 @@
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string; // YYYY-MM-DD
+  author: string;
+  category: string;
+  readTime: string;
+  content: string[]; // Array of paragraphs — each string is one <p> block
+  seoTitle?: string;
+  seoDescription?: string;
+}
+
+// Import all posts
+import { posts as post01 } from "@/content/blog/five-signs-business-ready-for-acquisition";
+import { posts as post02 } from "@/content/blog/what-founders-should-know-before-selling";
+import { posts as post03 } from "@/content/blog/role-of-sell-side-advisor";
+import { posts as post04 } from "@/content/blog/understanding-ebitda-adjustments";
+import { posts as post05 } from "@/content/blog/why-confidentiality-matters-in-ma";
+import { posts as post06 } from "@/content/blog/evaluating-inbound-acquisition-interest";
+import { posts as post07 } from "@/content/blog/capital-structure-decisions-for-founders";
+
+const allPosts: BlogPost[] = [
+  post01,
+  post02,
+  post03,
+  post04,
+  post05,
+  post06,
+  post07,
+];
+
+export function getAllPosts(): BlogPost[] {
+  return allPosts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+}
+
+export function getPostBySlug(slug: string): BlogPost | undefined {
+  return allPosts.find((post) => post.slug === slug);
+}
+
+export function getRecentPosts(count: number): BlogPost[] {
+  return getAllPosts().slice(0, count);
+}

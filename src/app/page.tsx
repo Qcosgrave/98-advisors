@@ -218,6 +218,101 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Acquisition Readiness Audit ── */}
+      <section className="py-24 lg:py-32 bg-ivory-dark/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+            <div className="lg:col-span-5">
+              <FadeIn>
+                <SectionLabel label="Readiness Advisory" />
+                <h2 className="font-serif text-4xl md:text-5xl font-light text-ink mt-6">
+                  Acquisition Readiness Audit
+                </h2>
+                <p className="text-base font-light text-charcoal leading-relaxed mt-6">
+                  Not every business is ready for a transaction — and the best
+                  time to find out isn&apos;t during the process. Our Acquisition
+                  Readiness Audit helps founders understand where they stand and
+                  what to address before going to market.
+                </p>
+              </FadeIn>
+              <FadeIn delay={0.2}>
+                <Link
+                  href="/contact"
+                  className="inline-block text-sm tracking-widest uppercase bg-ink text-ivory px-8 py-4 mt-8 hover:bg-ink-light transition-colors duration-300"
+                >
+                  Request an Audit
+                </Link>
+              </FadeIn>
+            </div>
+            <div className="lg:col-span-7">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-6">
+                {[
+                  {
+                    label: "Strategic",
+                    title: "Strategic Readiness",
+                    items: [
+                      "Market positioning & competitive differentiation",
+                      "Growth narrative & trajectory clarity",
+                      "Customer concentration & revenue quality",
+                      "Management team depth & transition planning",
+                    ],
+                  },
+                  {
+                    label: "Financial",
+                    title: "Financial Readiness",
+                    items: [
+                      "Financial reporting quality & auditability",
+                      "EBITDA normalization & add-back analysis",
+                      "Working capital & cash flow patterns",
+                      "Revenue sustainability & forecasting rigor",
+                    ],
+                  },
+                  {
+                    label: "Structural",
+                    title: "Structural Readiness",
+                    items: [
+                      "Corporate & legal entity structure",
+                      "Contract & IP documentation",
+                      "Regulatory compliance posture",
+                      "Data room preparation & organization",
+                    ],
+                  },
+                ].map((pillar, i) => (
+                  <FadeIn key={pillar.label} delay={i * 0.1}>
+                    <div className="border border-rule bg-ivory p-6 lg:p-8 h-full">
+                      <span className="text-xs tracking-widest uppercase text-bronze">
+                        {pillar.label}
+                      </span>
+                      <h3 className="font-serif text-xl font-light text-ink mt-3 mb-5">
+                        {pillar.title}
+                      </h3>
+                      <div className="space-y-3">
+                        {pillar.items.map((item, j) => (
+                          <div key={j} className="flex items-start gap-2">
+                            <span className="w-1 h-1 rounded-full bg-bronze/40 mt-2 shrink-0" />
+                            <span className="text-xs font-light text-charcoal leading-relaxed">
+                              {item}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </FadeIn>
+                ))}
+              </div>
+              <FadeIn delay={0.3}>
+                <p className="text-sm font-light text-charcoal-light mt-8 leading-relaxed">
+                  The Audit delivers a clear, candid assessment across three
+                  dimensions — highlighting strengths, identifying gaps, and
+                  providing a prioritized action plan to maximize readiness and
+                  value.
+                </p>
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Why 98 Advisors ── */}
       <section className="py-24 lg:py-32 bg-ink text-ivory">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">

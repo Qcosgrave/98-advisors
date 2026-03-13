@@ -4,9 +4,18 @@ import { SectionLabel } from "@/components/SectionLabel";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services — 98 Advisors",
+  title: "Services",
   description:
     "Sell-side advisory, buy-side advisory, capital advisory, and strategic advisory services for founders and business owners.",
+  alternates: {
+    canonical: "https://98advisors.com/services",
+  },
+  openGraph: {
+    title: "Services — 98 Advisors",
+    description:
+      "Sell-side advisory, buy-side advisory, capital advisory, and strategic advisory services for founders and business owners.",
+    url: "https://98advisors.com/services",
+  },
 };
 
 const services = [
@@ -76,6 +85,25 @@ const services = [
       "Founder transition and succession planning",
       "Board and stakeholder communication support",
       "Decision framework development",
+    ],
+  },
+  {
+    id: "readiness",
+    number: "05",
+    title: "Acquisition Readiness Audit",
+    subtitle: "Preparing your business strategically, financially, and structurally.",
+    description:
+      "The best time to discover gaps in your business\u2019s readiness is before you go to market \u2014 not during a process. Our Acquisition Readiness Audit provides a comprehensive, candid assessment of where your business stands across three critical dimensions, along with a prioritized action plan to maximize readiness and value.",
+    when: "You\u2019re considering a sale in the next 12\u201324 months and want to understand what needs to be addressed. Or you want to build long-term value with an eventual transaction in mind.",
+    includes: [
+      "Strategic positioning and competitive differentiation review",
+      "Financial reporting quality and EBITDA normalization analysis",
+      "Corporate and legal structure assessment",
+      "Customer concentration and revenue quality evaluation",
+      "Management team depth and transition readiness",
+      "Data room preparation guidance and organization",
+      "Prioritized action plan with timeline recommendations",
+      "Contract, IP, and regulatory compliance review",
     ],
   },
 ];

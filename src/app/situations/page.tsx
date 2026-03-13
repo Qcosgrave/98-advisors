@@ -4,9 +4,18 @@ import { SectionLabel } from "@/components/SectionLabel";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Who We Help — 98 Advisors",
+  title: "Who We Help",
   description:
     "We advise founders and business owners at inflection points — sales, acquisitions, capital decisions, and strategic transitions.",
+  alternates: {
+    canonical: "https://98advisors.com/situations",
+  },
+  openGraph: {
+    title: "Who We Help — 98 Advisors",
+    description:
+      "We advise founders and business owners at inflection points — sales, acquisitions, capital decisions, and strategic transitions.",
+    url: "https://98advisors.com/situations",
+  },
 };
 
 const situations = [

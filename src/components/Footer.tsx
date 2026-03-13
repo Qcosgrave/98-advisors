@@ -37,6 +37,7 @@ export function Footer() {
                 { href: "/services", label: "Services" },
                 { href: "/situations", label: "Who We Help" },
                 { href: "/about", label: "About" },
+                { href: "/blog", label: "Insights" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <Link
@@ -61,6 +62,7 @@ export function Footer() {
                 "Buy-Side Advisory",
                 "Capital Advisory",
                 "Strategic Advisory",
+                "Acquisition Readiness",
               ].map((service) => (
                 <span
                   key={service}

@@ -4,9 +4,18 @@ import { SectionLabel } from "@/components/SectionLabel";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About — 98 Advisors",
+  title: "About",
   description:
     "Meet Quinn Cosgrave and learn about 98 Advisors — a boutique advisory firm built for founders navigating complex strategic decisions.",
+  alternates: {
+    canonical: "https://98advisors.com/about",
+  },
+  openGraph: {
+    title: "About — 98 Advisors",
+    description:
+      "Meet Quinn Cosgrave and learn about 98 Advisors — a boutique advisory firm built for founders navigating complex strategic decisions.",
+    url: "https://98advisors.com/about",
+  },
 };
 
 export default function AboutPage() {
