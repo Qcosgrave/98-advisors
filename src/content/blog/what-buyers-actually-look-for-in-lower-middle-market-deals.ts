@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "What Buyers Actually Look for in Lower Middle Market Deals",
   excerpt:
     "Understanding how buyers evaluate businesses in the lower middle market helps founders position their companies more effectively — and avoid common pitfalls that erode value.",
-  date: "2025-03-14",
+  date: "2026-03-14",
   author: "Quinn Cosgrave",
   category: "Sell-Side Advisory",
   readTime: "6 min read",
