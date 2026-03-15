@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "The Difference Between Strategic and Financial Buyers",
   excerpt:
     "Strategic buyers and financial buyers approach acquisitions with fundamentally different objectives. Understanding the distinction helps founders evaluate offers more effectively.",
-  date: "2025-03-15",
+  date: "2026-03-15",
   author: "Quinn Cosgrave",
   category: "M&A Process",
   readTime: "5 min read",
