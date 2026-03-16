@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "Why Timing Matters More Than Most Founders Realize",
   excerpt:
     "The decision to sell a business is deeply personal — but the timing of that decision has outsized financial consequences. Understanding the dynamics of market timing can protect value.",
-  date: "2025-03-16",
+  date: "2026-03-16",
   author: "Quinn Cosgrave",
   category: "Strategic Advisory",
   readTime: "5 min read",

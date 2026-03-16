@@ -22,6 +22,7 @@ import { posts as post07 } from "@/content/blog/understanding-ebitda-adjustments
 import { posts as post08 } from "@/content/blog/what-buyers-actually-look-for-in-lower-middle-market-deals";
 import { posts as post09 } from "@/content/blog/what-founders-should-know-before-selling";
 import { posts as post10 } from "@/content/blog/why-confidentiality-matters-in-ma";
+import { posts as post11 } from "@/content/blog/why-timing-matters-in-a-sale-process";
 const allPosts: BlogPost[] = [
   post01,
   post02,
@@ -33,6 +34,7 @@ const allPosts: BlogPost[] = [
   post08,
   post09,
   post10,
+  post11,
 ];
 
 export function getAllPosts(): BlogPost[] {
