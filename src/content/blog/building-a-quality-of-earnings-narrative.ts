@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "Building a Quality of Earnings Narrative Before Buyers Do It for You",
   excerpt:
     "A quality of earnings analysis is one of the most influential documents in any deal. Proactively shaping that narrative gives founders a meaningful advantage.",
-  date: "2025-03-17",
+  date: "2026-03-17",
   author: "Quinn Cosgrave",
   category: "Financial Readiness",
   readTime: "6 min read",
