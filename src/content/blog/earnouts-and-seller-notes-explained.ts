@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "Earnouts and Seller Notes: What Founders Need to Understand",
   excerpt:
     "Not all deal value is created equal. Understanding the mechanics and risks of earnouts and seller notes helps founders negotiate more effectively.",
-  date: "2025-03-18",
+  date: "2026-03-18",
   author: "Quinn Cosgrave",
   category: "M&A Process",
   readTime: "6 min read",
