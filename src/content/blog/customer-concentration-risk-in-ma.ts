@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "Customer Concentration: The Silent Deal Killer",
   excerpt:
     "Few issues derail more lower middle market transactions than customer concentration. Understanding how buyers view this risk — and how to mitigate it — is essential.",
-  date: "2025-03-19",
+  date: "2026-03-19",
   author: "Quinn Cosgrave",
   category: "Acquisition Readiness",
   readTime: "5 min read",
