@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "How Founders Should Think About Valuation Multiples",
   excerpt:
     "Valuation multiples are a starting point for pricing conversations — not the final word. Understanding what drives multiples helps founders set realistic expectations.",
-  date: "2025-03-20",
+  date: "2026-03-20",
   author: "Quinn Cosgrave",
   category: "Financial Readiness",
   readTime: "6 min read",

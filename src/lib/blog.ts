@@ -18,14 +18,15 @@ import { posts as post03 } from "@/content/blog/customer-concentration-risk-in-m
 import { posts as post04 } from "@/content/blog/earnouts-and-seller-notes-explained";
 import { posts as post05 } from "@/content/blog/evaluating-inbound-acquisition-interest";
 import { posts as post06 } from "@/content/blog/five-signs-business-ready-for-acquisition";
-import { posts as post07 } from "@/content/blog/preparing-your-management-team-for-due-diligence";
-import { posts as post08 } from "@/content/blog/role-of-sell-side-advisor";
-import { posts as post09 } from "@/content/blog/the-difference-between-strategic-and-financial-buyers";
-import { posts as post10 } from "@/content/blog/understanding-ebitda-adjustments";
-import { posts as post11 } from "@/content/blog/what-buyers-actually-look-for-in-lower-middle-market-deals";
-import { posts as post12 } from "@/content/blog/what-founders-should-know-before-selling";
-import { posts as post13 } from "@/content/blog/why-confidentiality-matters-in-ma";
-import { posts as post14 } from "@/content/blog/why-timing-matters-in-a-sale-process";
+import { posts as post07 } from "@/content/blog/how-to-think-about-valuation-multiples";
+import { posts as post08 } from "@/content/blog/preparing-your-management-team-for-due-diligence";
+import { posts as post09 } from "@/content/blog/role-of-sell-side-advisor";
+import { posts as post10 } from "@/content/blog/the-difference-between-strategic-and-financial-buyers";
+import { posts as post11 } from "@/content/blog/understanding-ebitda-adjustments";
+import { posts as post12 } from "@/content/blog/what-buyers-actually-look-for-in-lower-middle-market-deals";
+import { posts as post13 } from "@/content/blog/what-founders-should-know-before-selling";
+import { posts as post14 } from "@/content/blog/why-confidentiality-matters-in-ma";
+import { posts as post15 } from "@/content/blog/why-timing-matters-in-a-sale-process";
 const allPosts: BlogPost[] = [
   post01,
   post02,
@@ -41,6 +42,7 @@ const allPosts: BlogPost[] = [
   post12,
   post13,
   post14,
+  post15,
 ];
 
 export function getAllPosts(): BlogPost[] {
