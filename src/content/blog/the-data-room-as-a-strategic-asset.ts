@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "The Data Room as a Strategic Asset in M&A",
   excerpt:
     "A well-organized data room does more than satisfy due diligence requests — it signals operational maturity and builds buyer confidence from day one.",
-  date: "2025-03-21",
+  date: "2026-03-21",
   author: "Quinn Cosgrave",
   category: "Acquisition Readiness",
   readTime: "5 min read",
