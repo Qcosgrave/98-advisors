@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "Founder Transition Planning: Before, During, and After a Sale",
   excerpt:
     "The most overlooked element of any transaction is the founder's own transition. Planning for life after the close is not a luxury — it is a strategic necessity.",
-  date: "2025-03-22",
+  date: "2026-03-22",
   author: "Quinn Cosgrave",
   category: "Strategic Advisory",
   readTime: "5 min read",
