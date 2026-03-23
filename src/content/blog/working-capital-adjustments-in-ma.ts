@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "Working Capital Adjustments: The Most Misunderstood Part of M&A",
   excerpt:
     "Working capital adjustments are one of the most common sources of post-close disputes. Understanding the mechanics early can prevent costly surprises.",
-  date: "2025-03-23",
+  date: "2026-03-23",
   author: "Quinn Cosgrave",
   category: "Financial Readiness",
   readTime: "6 min read",
