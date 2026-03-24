@@ -27,9 +27,10 @@ import { posts as post12 } from "@/content/blog/the-difference-between-strategic
 import { posts as post13 } from "@/content/blog/understanding-ebitda-adjustments";
 import { posts as post14 } from "@/content/blog/what-buyers-actually-look-for-in-lower-middle-market-deals";
 import { posts as post15 } from "@/content/blog/what-founders-should-know-before-selling";
-import { posts as post16 } from "@/content/blog/why-confidentiality-matters-in-ma";
-import { posts as post17 } from "@/content/blog/why-timing-matters-in-a-sale-process";
-import { posts as post18 } from "@/content/blog/working-capital-adjustments-in-ma";
+import { posts as post16 } from "@/content/blog/when-to-walk-away-from-a-deal";
+import { posts as post17 } from "@/content/blog/why-confidentiality-matters-in-ma";
+import { posts as post18 } from "@/content/blog/why-timing-matters-in-a-sale-process";
+import { posts as post19 } from "@/content/blog/working-capital-adjustments-in-ma";
 const allPosts: BlogPost[] = [
   post01,
   post02,
@@ -49,6 +50,7 @@ const allPosts: BlogPost[] = [
   post16,
   post17,
   post18,
+  post19,
 ];
 
 export function getAllPosts(): BlogPost[] {

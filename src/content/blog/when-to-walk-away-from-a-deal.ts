@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "Knowing When to Walk Away from a Deal",
   excerpt:
     "Not every transaction should close. Understanding when to walk away — and having the discipline to do it — is one of the most important decisions a founder can make.",
-  date: "2025-03-24",
+  date: "2026-03-24",
   author: "Quinn Cosgrave",
   category: "Strategic Advisory",
   readTime: "5 min read",
