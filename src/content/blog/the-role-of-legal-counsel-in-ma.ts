@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "The Role of Legal Counsel in M&A Transactions",
   excerpt:
     "Your attorney is not just reviewing documents — they are protecting your future. Understanding how to work with M&A counsel effectively is essential for founders.",
-  date: "2025-03-25",
+  date: "2026-03-25",
   author: "Quinn Cosgrave",
   category: "M&A Process",
   readTime: "5 min read",
