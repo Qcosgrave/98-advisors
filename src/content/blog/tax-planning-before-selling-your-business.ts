@@ -5,7 +5,7 @@ export const posts: BlogPost = {
   title: "Tax Planning Before Selling Your Business: What Founders Miss",
   excerpt:
     "The after-tax proceeds of a sale often differ dramatically from the headline price. Proactive tax planning can preserve millions in value that would otherwise be lost.",
-  date: "2025-03-26",
+  date: "2026-03-26",
   author: "Quinn Cosgrave",
   category: "Financial Readiness",
   readTime: "6 min read",

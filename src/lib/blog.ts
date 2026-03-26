@@ -22,16 +22,17 @@ import { posts as post07 } from "@/content/blog/founder-transition-planning";
 import { posts as post08 } from "@/content/blog/how-to-think-about-valuation-multiples";
 import { posts as post09 } from "@/content/blog/preparing-your-management-team-for-due-diligence";
 import { posts as post10 } from "@/content/blog/role-of-sell-side-advisor";
-import { posts as post11 } from "@/content/blog/the-data-room-as-a-strategic-asset";
-import { posts as post12 } from "@/content/blog/the-difference-between-strategic-and-financial-buyers";
-import { posts as post13 } from "@/content/blog/the-role-of-legal-counsel-in-ma";
-import { posts as post14 } from "@/content/blog/understanding-ebitda-adjustments";
-import { posts as post15 } from "@/content/blog/what-buyers-actually-look-for-in-lower-middle-market-deals";
-import { posts as post16 } from "@/content/blog/what-founders-should-know-before-selling";
-import { posts as post17 } from "@/content/blog/when-to-walk-away-from-a-deal";
-import { posts as post18 } from "@/content/blog/why-confidentiality-matters-in-ma";
-import { posts as post19 } from "@/content/blog/why-timing-matters-in-a-sale-process";
-import { posts as post20 } from "@/content/blog/working-capital-adjustments-in-ma";
+import { posts as post11 } from "@/content/blog/tax-planning-before-selling-your-business";
+import { posts as post12 } from "@/content/blog/the-data-room-as-a-strategic-asset";
+import { posts as post13 } from "@/content/blog/the-difference-between-strategic-and-financial-buyers";
+import { posts as post14 } from "@/content/blog/the-role-of-legal-counsel-in-ma";
+import { posts as post15 } from "@/content/blog/understanding-ebitda-adjustments";
+import { posts as post16 } from "@/content/blog/what-buyers-actually-look-for-in-lower-middle-market-deals";
+import { posts as post17 } from "@/content/blog/what-founders-should-know-before-selling";
+import { posts as post18 } from "@/content/blog/when-to-walk-away-from-a-deal";
+import { posts as post19 } from "@/content/blog/why-confidentiality-matters-in-ma";
+import { posts as post20 } from "@/content/blog/why-timing-matters-in-a-sale-process";
+import { posts as post21 } from "@/content/blog/working-capital-adjustments-in-ma";
 const allPosts: BlogPost[] = [
   post01,
   post02,
@@ -53,6 +54,7 @@ const allPosts: BlogPost[] = [
   post18,
   post19,
   post20,
+  post21,
 ];
 
 export function getAllPosts(): BlogPost[] {
