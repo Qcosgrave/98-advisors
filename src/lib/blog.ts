@@ -33,6 +33,16 @@ import { posts as post18 } from "@/content/blog/when-to-walk-away-from-a-deal";
 import { posts as post19 } from "@/content/blog/why-confidentiality-matters-in-ma";
 import { posts as post20 } from "@/content/blog/why-timing-matters-in-a-sale-process";
 import { posts as post21 } from "@/content/blog/working-capital-adjustments-in-ma";
+import { posts as post22 } from "@/content/blog/how-private-equity-recapitalizations-work";
+import { posts as post23 } from "@/content/blog/management-presentations-that-win-deals";
+import { posts as post24 } from "@/content/blog/letter-of-intent-what-founders-must-negotiate";
+import { posts as post25 } from "@/content/blog/succession-planning-is-not-exit-planning";
+import { posts as post26 } from "@/content/blog/why-your-business-broker-isnt-enough";
+import { posts as post27 } from "@/content/blog/employee-retention-during-ma";
+import { posts as post28 } from "@/content/blog/representations-and-warranties-insurance";
+import { posts as post29 } from "@/content/blog/industry-specific-buyers-and-how-to-find-them";
+import { posts as post30 } from "@/content/blog/recurring-revenue-and-its-impact-on-valuation";
+import { posts as post31 } from "@/content/blog/post-closing-obligations-what-founders-should-expect";
 const allPosts: BlogPost[] = [
   post01,
   post02,
@@ -55,6 +65,16 @@ const allPosts: BlogPost[] = [
   post19,
   post20,
   post21,
+  post22,
+  post23,
+  post24,
+  post25,
+  post26,
+  post27,
+  post28,
+  post29,
+  post30,
+  post31,
 ];
 
 export function getAllPosts(): BlogPost[] {

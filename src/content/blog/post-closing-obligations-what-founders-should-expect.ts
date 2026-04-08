@@ -1,0 +1,26 @@
+import { BlogPost } from "@/lib/blog";
+
+export const posts: BlogPost = {
+  slug: "post-closing-obligations-what-founders-should-expect",
+  title: "Post-Closing Obligations: What Founders Should Expect After Selling",
+  excerpt:
+    "The closing is not the end of the transaction. Founders who understand post-closing obligations avoid surprises and protect the value they negotiated.",
+  date: "2026-04-08",
+  author: "Quinn Cosgrave",
+  category: "M&A Process",
+  readTime: "7 min read",
+  seoTitle: "Post-Closing Obligations in M&A: A Founder's Guide",
+  seoDescription:
+    "Understand the common post-closing obligations founders face after selling their business, from transition services to indemnification and working capital adjustments.",
+  content: [
+    "There is a common misconception among first-time sellers that closing day is the finish line — the moment when the transaction is complete and the founder can move on. In reality, closing is more accurately described as a transition point. Most M&A transactions create a set of post-closing obligations that can extend for months or years, and founders who are not prepared for these obligations often find the period after closing more stressful and complex than the deal process itself.",
+    "Transition services are among the most immediate post-closing obligations. In many transactions, the founder agrees to provide operational support for a defined period — typically three to twelve months — to ensure continuity during the ownership change. This may involve maintaining customer relationships, training the buyer's team, supporting technology transitions, and being available for questions about the business. The scope, duration, and compensation for transition services should be clearly defined in the purchase agreement.",
+    "Working capital adjustments are a common source of post-closing friction. Most purchase agreements establish a target level of working capital that the seller is expected to deliver at closing. After the deal closes, the buyer's accountants calculate the actual working capital as of the closing date and compare it to the target. If the actual amount is below the target, the seller owes the buyer the difference. If it is above the target, the buyer pays the seller. This true-up process typically occurs within 60 to 90 days after closing and can involve significant amounts of money.",
+    "Earnout provisions, if included in the deal, create obligations and monitoring requirements that extend well beyond closing. An earnout ties a portion of the purchase price to the future performance of the business, measured against defined metrics over a specified period — typically one to three years. During this period, the founder may have limited control over the business decisions that affect whether the earnout targets are achieved. Disputes over earnout calculations are among the most common sources of post-closing litigation in M&A.",
+    "Indemnification obligations are the silent risk that many founders underestimate. The purchase agreement typically requires the seller to indemnify the buyer for losses arising from breaches of representations and warranties, undisclosed liabilities, and certain specified matters. Even with representations and warranties insurance in place, the seller may retain exposure for specific exclusions, fraud, or amounts below the insurance retention. Understanding the scope and duration of your indemnification exposure is essential.",
+    "Non-compete and non-solicitation agreements restrict what the founder can do after selling. A typical non-compete prevents the founder from starting or joining a competing business for a defined period — usually two to five years — within a specified geographic area. Non-solicitation provisions prohibit the founder from recruiting employees or soliciting customers of the sold business. These restrictions can significantly affect the founder's career options and should be negotiated carefully during the deal process.",
+    "Tax obligations continue after closing as well. Depending on the deal structure, the founder may receive payments over time — through seller notes, earnouts, or deferred consideration — each of which has specific tax treatment. The allocation of the purchase price across asset classes affects the tax burden, and any post-closing adjustments may require amended filings. Maintaining a relationship with the tax advisors who structured the transaction through at least the first filing cycle is important.",
+    "Founders who are aware of these obligations before they sign the purchase agreement are in a much better position to negotiate favorable terms, plan for the post-closing period, and manage their expectations about what comes next. The best advisory teams ensure that the post-closing landscape is fully mapped during the negotiation phase — not after the ink is dry.",
+    "Selling a business is a major life event, and the period after closing is a significant phase of the transition. Planning for it with the same rigor you applied to building the business ensures that the value you created is fully realized and that the next chapter begins on solid footing.",
+  ],
+};
