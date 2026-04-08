@@ -6,11 +6,37 @@ import { useState, FormEvent } from "react";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: integrate with your preferred form handler (e.g., Formspree, email API)
-    setSubmitted(true);
+    setSending(true);
+    setError(false);
+
+    const form = e.currentTarget;
+    const data = {
+      firstName: (form.elements.namedItem("firstName") as HTMLInputElement).value,
+      lastName: (form.elements.namedItem("lastName") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      company: (form.elements.namedItem("company") as HTMLInputElement).value,
+      interest: (form.elements.namedItem("interest") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -47,9 +73,8 @@ export default function ContactPage() {
                     <span className="text-xs tracking-widest uppercase text-bronze">
                       Email
                     </span>
-                    {/* Update with your actual email */}
                     <p className="text-base font-light text-ink mt-1">
-                      advisory@98advisors.com
+                      Qcosgrave@98advisors.com
                     </p>
                   </div>
                   <div>
@@ -182,12 +207,19 @@ export default function ContactPage() {
                       />
                     </div>
 
+                    {error && (
+                      <p className="text-sm text-red-700">
+                        Something went wrong. Please try again or email us directly.
+                      </p>
+                    )}
+
                     <div className="pt-4">
                       <button
                         type="submit"
-                        className="text-sm tracking-widest uppercase bg-ink text-ivory px-10 py-5 hover:bg-ink-light transition-colors duration-300 w-full sm:w-auto cursor-pointer"
+                        disabled={sending}
+                        className="text-sm tracking-widest uppercase bg-ink text-ivory px-10 py-5 hover:bg-ink-light transition-colors duration-300 w-full sm:w-auto cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                       >
-                        Send Message
+                        {sending ? "Sending..." : "Send Message"}
                       </button>
                     </div>
 
