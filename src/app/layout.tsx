@@ -86,6 +86,7 @@ export default function RootLayout({
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <head>
         <OrganizationJsonLd />
+        <link rel="alternate" type="application/rss+xml" title="98 Advisors — Insights" href="/feed.xml" />
       </head>
       <body className="antialiased">
         <div className="grain-overlay" aria-hidden="true" />

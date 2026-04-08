@@ -108,9 +108,49 @@ const services = [
   },
 ];
 
+function FAQJsonLd() {
+  const faqs = [
+    {
+      question: "What is sell-side advisory?",
+      answer: "Sell-side advisory involves guiding business owners through the entire process of selling their company — from strategic preparation and buyer identification to managing the sale process, evaluating offers, and closing the transaction.",
+    },
+    {
+      question: "When should a founder engage an M&A advisor?",
+      answer: "Ideally 12 to 24 months before a target transaction date. Early engagement allows time for financial preparation, operational improvements, and strategic positioning that maximize value and deal certainty.",
+    },
+    {
+      question: "What is an Acquisition Readiness Audit?",
+      answer: "An Acquisition Readiness Audit is a comprehensive assessment of a business across strategic, financial, and structural dimensions. It identifies gaps and provides a prioritized action plan to maximize readiness and value before going to market.",
+    },
+    {
+      question: "What size businesses does 98 Advisors work with?",
+      answer: "98 Advisors works primarily with founder-led businesses in the lower middle market — typically companies with enterprise values between $5 million and $75 million.",
+    },
+    {
+      question: "What is the difference between a business broker and an M&A advisor?",
+      answer: "Business brokers typically list businesses and respond to inbound interest, suitable for smaller transactions. M&A advisors design and run structured processes with proactive buyer outreach, sophisticated negotiation, and institutional-quality work product — appropriate for complex lower middle market transactions.",
+    },
+  ];
+
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+  );
+}
+
 export default function ServicesPage() {
   return (
     <>
+      <FAQJsonLd />
       {/* Hero */}
       <section className="pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">

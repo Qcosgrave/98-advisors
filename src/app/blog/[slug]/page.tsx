@@ -4,6 +4,45 @@ import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { FadeIn } from "@/components/FadeIn";
 
+function ArticleJsonLd({ title, description, slug, date, author }: {
+  title: string; description: string; slug: string; date: string; author: string;
+}) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    url: `https://98advisors.com/blog/${slug}`,
+    datePublished: date,
+    dateModified: date,
+    author: { "@type": "Person", name: author },
+    publisher: {
+      "@type": "Organization",
+      name: "98 Advisors",
+      url: "https://98advisors.com",
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://98advisors.com/blog/${slug}` },
+  };
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+  );
+}
+
+function BreadcrumbJsonLd({ title, slug }: { title: string; slug: string }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://98advisors.com" },
+      { "@type": "ListItem", position: 2, name: "Insights", item: "https://98advisors.com/blog" },
+      { "@type": "ListItem", position: 3, name: title, item: `https://98advisors.com/blog/${slug}` },
+    ],
+  };
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+  );
+}
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -44,6 +83,15 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
+      <ArticleJsonLd
+        title={post.title}
+        description={post.seoDescription || post.excerpt}
+        slug={post.slug}
+        date={post.date}
+        author={post.author}
+      />
+      <BreadcrumbJsonLd title={post.title} slug={post.slug} />
+
       {/* Article Header */}
       <section className="pt-32 pb-12 lg:pt-40 lg:pb-16">
         <div className="max-w-3xl mx-auto px-6 lg:px-12">

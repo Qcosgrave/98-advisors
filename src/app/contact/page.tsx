@@ -74,7 +74,7 @@ export default function ContactPage() {
                       Email
                     </span>
                     <p className="text-base font-light text-ink mt-1">
-                      Qcosgrave@98advisors.com
+                      advisory@98advisors.com
                     </p>
                   </div>
                   <div>
