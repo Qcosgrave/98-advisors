@@ -58,18 +58,19 @@ export function Footer() {
             </h4>
             <div className="flex flex-col gap-3">
               {[
-                "Sell-Side Advisory",
-                "Buy-Side Advisory",
-                "Capital Advisory",
-                "Strategic Advisory",
-                "Acquisition Readiness",
+                { label: "Sell-Side Advisory", id: "sell-side" },
+                { label: "Buy-Side Advisory", id: "buy-side" },
+                { label: "Capital Advisory", id: "capital" },
+                { label: "Strategic Advisory", id: "strategic" },
+                { label: "Acquisition Readiness", id: "readiness" },
               ].map((service) => (
-                <span
-                  key={service}
-                  className="text-sm font-light text-ivory/50"
+                <Link
+                  key={service.id}
+                  href={`/services#${service.id}`}
+                  className="text-sm font-light text-ivory/50 hover:text-ivory transition-colors duration-300"
                 >
-                  {service}
-                </span>
+                  {service.label}
+                </Link>
               ))}
             </div>
           </div>
